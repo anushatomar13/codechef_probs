@@ -1,0 +1,29 @@
+Q: https://www.codechef.com/problems/JDELAY?tab=statement
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n;
+        cin >> n;
+        int counter = 0;
+
+        for (int i = 0; i < n; i++) {
+            int s, j;
+            cin >> s >> j;
+            int result = j - s;
+            
+            if (result > 5) {
+                counter += 1;
+            }
+        }
+
+        cout << counter << endl;
+    }
+
+    return 0;
+}
